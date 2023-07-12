@@ -40,8 +40,13 @@ test_y = np.array(test_y,'float32')
 
 # Normalising the Data between 0 and 1
 # We'll calculate the mean of the data and divide it by the std deviation
-X_train = np.mean(X_train, axis = 0)
+X_train -= np.mean(X_train, axis = 0)
 X_train /= np.std(X_train, axis = 0)
 
-X_test = np.mean(X_test, axis = 0)
+X_test -= np.mean(X_test, axis = 0)
 X_test /= np.std(X_test, axis = 0)
+
+print(f"X_train sample data : {X_train[0:3]}")
+print(f"train_y sample data : {train_y[0:3]}")
+print(f"X_test sample data : {X_test[0:3]}")
+print(f"test_y sample data : {test_y[0:3]}")
