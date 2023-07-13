@@ -15,3 +15,14 @@ To build a real-time emotion detection system using Keras, we typically follow a
 
 After training the model, we can deploy it to perform real-time emotion detection. By utilizing techniques like face detection and tracking, we can continuously analyze facial expressions from live video streams or recorded video footage. This enables applications such as emotion-aware user interfaces, interactive virtual characters, or even real-time emotion monitoring in healthcare settings.
 
+## Dataset:
+This project has made use of FER (Facial Emotion Detection) dataset formed and compiled in the year 2013. The original FER2013 dataset in Kaggle is available as a single csv file, here. I had this converted into a dataset of images in the PNG format for training/testing. 
+
+The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. The task is to categorize each face based on the emotion shown in the facial expression in to one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). 
+train.csv contains two columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. 
+
+#### The dataset can be downloaded here:
+https://www.kaggle.com/c/challenges-in-representation-learning-facial-expression-recognition-challenge/data
+
+
+
