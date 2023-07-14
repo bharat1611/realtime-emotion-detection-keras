@@ -84,6 +84,7 @@ model.add(MaxPooling2D(pool_size=(2, 2), strides=(2, 2)))
 model.add(Flatten())
 
 # Adding dense layer
+
 model.add(Dense(2 * 2 * 2 * 2 * num_features, activation='relu'))
 model.add(Dropout(0.2))
 model.add(Dense(2 * 2 * 2 * 2 * num_features, activation='relu'))
