@@ -7,8 +7,8 @@ import keras.utils as image
 from PIL import Image, ImageTk
 
 # Load the pre-trained model
-model = model_from_json(open("model_fer.json", "r").read())
-model.load_weights('model_fer.h5')
+model = model_from_json(open("fer.json", "r").read())
+model.load_weights('fer.h5')
 
 # Initialize the face cascade classifier
 face_cascade = cv2.CascadeClassifier('haarcascade_frontalface_default.xml')
@@ -47,6 +47,9 @@ def detect_emotions():
 
     video_label.after(10, detect_emotions)
 
+# Function to close the application
+def close_application():
+    window.destroy()
 
 # Create the main window
 window = tk.Tk()
@@ -56,6 +59,11 @@ window.geometry("800x600")
 # Create a label to display the video stream
 video_label = tk.Label(window)
 video_label.pack()
+
+# Create a button to close the application
+close_button = tk.Button(window, text="Close", command=close_application)
+close_button.place(relx=.5, rely=.8)
+close_button.pack()
 
 # Open the video capture
 cap = cv2.VideoCapture(0)
