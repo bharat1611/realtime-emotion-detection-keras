@@ -48,4 +48,42 @@ This project has made use of FER (Facial Emotion Detection) dataset formed and c
 The data consists of 48x48 pixel grayscale images of faces. The faces have been automatically registered so that the face is more or less centered and occupies about the same amount of space in each image. The task is to categorize each face based on the emotion shown in the facial expression in to one of seven categories (0=Angry, 1=Disgust, 2=Fear, 3=Happy, 4=Sad, 5=Surprise, 6=Neutral). 
 train.csv contains two columns, "emotion" and "pixels". The "emotion" column contains a numeric code ranging from 0 to 6, inclusive, for the emotion that is present in the image. 
 
+## Result:
+After training and evaluating the face-emotion detection model using Keras, the results reveal its remarkable capabilities. With a high accuracy level, the model demonstrates an ability to accurately detect and classify various emotions from facial expressions. This achievement not only showcases the power of deep learning algorithms but also opens up new avenues for emotion analysis in various fields.
+
+<table>
+	<thead>
+    <td>
+			<b>GIF</b>
+		</td>
+		<td>
+			<b>Neutral</b>
+		</td>
+		<td>
+			<b>Fear</b>
+    </td>
+	</thead>
+	<tr>
+    <td>
+			<img width="400" alt="code-one" src="https://github.com/bharat1611/realtime-emotion-detection-keras/assets/95923021/32d54d1d-1fa9-4c98-9198-6e9646a6b897">
+		</td>
+		<td>
+			<img width="289" alt="code-one" src="https://github.com/bharat1611/realtime-emotion-detection-keras/assets/95923021/b7fbd979-2d37-4bd2-a470-15c532cc50e2">
+		</td>
+		<td>
+			<img width="306" alt="render-one" src="https://github.com/bharat1611/realtime-emotion-detection-keras/assets/95923021/78aa0431-3495-4d03-ad83-1dd167ec18c9">
+		</td>
+	</tr>
+</table>
+
+## Future Work:
+The future of work in real-time face emotion detection using Keras is bright and full of potential. With its seamless integration of deep learning techniques, Keras empowers researchers and developers to create sophisticated models that accurately analyze and interpret human emotions.
+
+<ins>Some Practical Applications here are:</ins>
+* <b>Emotion Recognition in Human-Computer Interaction:</b> Incorporating face-emotion detection into virtual assistants, interactive systems, and video conferencing platforms can enhance user experience and enable more empathetic interactions.<br>
+* <b>Mental Health Monitoring:</b> By analyzing facial expressions, this technology can assist in monitoring mental health conditions, helping healthcare professionals to provide timely interventions.<br>
+* <b>Marketing and Advertising:</b> Face-emotion detection can aid advertisers and marketers in assessing consumer responses to advertisements, allowing them to optimize campaigns for maximum emotional impact.<br>
+* <b>Educational Applications:</b> Introducing face-emotion detection in e-learning platforms can help instructors understand students' emotional engagement, enabling personalized interventions and better learning outcomes.<br>
+
+
 
