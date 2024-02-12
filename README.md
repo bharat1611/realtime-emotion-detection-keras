@@ -25,7 +25,6 @@ python main.py
 python UI.py
 ```
 
-
 ## Overview:
 Emotions are an integral part of human communication and behavior, playing a vital role in our interactions and decision-making processes. The ability to accurately detect and interpret emotions in real-time has significant implications across various domains, including human-computer interaction, healthcare, marketing, and entertainment. Real-time emotion detection systems leverage advanced technologies to analyze facial expressions, vocal cues, or physiological signals and classify them into specific emotional states.
 
